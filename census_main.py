@@ -56,7 +56,7 @@ st.write("This web app allows a user to explore and visualise the census data.")
 st.subheader("View Data")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 # Add an expander and display the dataset as a static table within the expander.
-with st.expander("View Dataset"):
+with st.beta_expander("View Dataset"):
   st.dataframe(census_df)
 # Create three beta_columns.
 st.subheader("Columns Description:")
